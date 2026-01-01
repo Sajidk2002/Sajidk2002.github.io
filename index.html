@@ -36,21 +36,37 @@
     }
     a:hover {
       text-decoration: underline;
+      color: #003366;
     }
+
+    /* Fade-in animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Skill bars */
+    .skill-bar { background: #eee; border-radius: 5px; margin: 5px 0; height: 20px; }
+    .skill-fill { background: #0056b3; height: 20px; border-radius: 5px; color: white; padding-left: 5px; line-height: 20px; transition: width 1s; }
   </style>
 </head>
 <body>
 
-  <h1>Muhammad Sajid K</h1>
-  <div class="sub">Embedded Systems Engineer | ARM Cortex-M | FreeRTOS | CAN</div>
+  <h1 class="fade-in">Muhammad Sajid K</h1>
+  <div class="sub fade-in">Embedded Systems Engineer | ARM Cortex-M | FreeRTOS | CAN</div>
 
-  <p>
+  <p class="fade-in">
     Embedded Systems Engineer trained at Vector India with hands-on experience in ARM Cortex-M firmware development,
     Embedded C/C++, and real-time systems. Strong focus on low-level firmware, device drivers, and automotive
     communication protocols for reliable embedded applications.
   </p>
 
-  <p>
+  <p class="fade-in">
     <strong>Email:</strong> muhammadsajidk183@gmail.com<br />
     <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/muhammadsajid-embedded">linkedin.com/in/muhammadsajid-embedded</a><br />
     <strong>GitHub:</strong> <a href="https://github.com/Sajidk2002">github.com/Sajidk2002</a><br />
@@ -59,59 +75,67 @@
 
   <hr />
 
-  <h2>Technical Skills</h2>
-  <ul>
-    <li><strong>Languages:</strong> Embedded C, C++, C, Python</li>
-    <li><strong>Microcontrollers:</strong> ARM Cortex-M (STM32), 8051</li>
-    <li><strong>RTOS:</strong> FreeRTOS, interrupts, NVIC</li>
-    <li><strong>Protocols:</strong> CAN, UART, SPI, I2C</li>
-    <li><strong>Peripherals:</strong> GPIO, PWM, Timers, ADC, DMA</li>
-    <li><strong>Tools:</strong> Keil uVision, STM32CubeIDE, Git, Linux</li>
-  </ul>
+  <h2 class="fade-in">Technical Skills</h2>
+  <div class="fade-in">
+    <div class="skill-bar"><div class="skill-fill" style="width:90%">Embedded C</div></div>
+    <div class="skill-bar"><div class="skill-fill" style="width:85%">C++</div></div>
+    <div class="skill-bar"><div class="skill-fill" style="width:80%">FreeRTOS</div></div>
+    <div class="skill-bar"><div class="skill-fill" style="width:85%">CAN/UART/SPI/I2C</div></div>
+  </div>
 
   <hr />
 
-  <h2>Projects</h2>
+  <h2 class="fade-in">Projects</h2>
 
-  <h3>Reverse Parking System (Automotive Embedded)</h3>
-  <ul>
+  <h3 class="fade-in">Reverse Parking System (Automotive Embedded)</h3>
+  <ul class="fade-in">
     <li>Developed CAN-based inter-ECU communication on ARM Cortex-M</li>
     <li>Implemented interrupt-driven firmware with sub-100 ms response time</li>
     <li>Focused on reliability for automotive embedded applications</li>
   </ul>
-  <p><strong>Technologies:</strong> Embedded C, CAN, FreeRTOS, STM32</p>
-  <p><a href="https://github.com/Sajidk2002/reverse-parking-system">View Project Repository</a></p>
+  <p class="fade-in"><strong>Technologies:</strong> Embedded C, CAN, FreeRTOS, STM32</p>
+  <p class="fade-in"><a class="project-link" href="https://github.com/Sajidk2002/reverse-parking-system">View Project Repository</a></p>
 
-  <h3>Automated Waste Collection Robot</h3>
-  <ul>
+  <h3 class="fade-in">Automated Waste Collection Robot</h3>
+  <ul class="fade-in">
     <li>Integrated OpenCV-based image recognition with embedded control</li>
     <li>Implemented PWM motor control and sensor-based navigation</li>
     <li>Achieved autonomous obstacle avoidance</li>
   </ul>
-  <p><strong>Technologies:</strong> ARM Cortex-M, Embedded C++, Python, OpenCV</p>
-  <p><a href="https://github.com/Sajidk2002/automated-waste-collection-robot">View Project Repository</a></p>
+  <p class="fade-in"><strong>Technologies:</strong> ARM Cortex-M, Embedded C++, Python, OpenCV</p>
+  <p class="fade-in"><a class="project-link" href="https://github.com/Sajidk2002/automated-waste-collection-robot">View Project Repository</a></p>
 
-  <h3>Student Record Management System</h3>
-  <ul>
+  <h3 class="fade-in">Student Record Management System</h3>
+  <ul class="fade-in">
     <li>Built a console-based database using C and linked lists</li>
     <li>Implemented CRUD operations and sorting</li>
   </ul>
-  <p><strong>Technologies:</strong> C, Data Structures</p>
-  <p><a href="https://github.com/Sajidk2002/student-record-management">View Project Repository</a></p>
+  <p class="fade-in"><strong>Technologies:</strong> C, Data Structures</p>
+  <p class="fade-in"><a class="project-link" href="https://github.com/Sajidk2002/student-record-management">View Project Repository</a></p>
 
   <hr />
 
-  <h2>Career Interests</h2>
-  <p>
-    Automotive Embedded Systems, Firmware Development, Device Drivers,
-    Industrial IoT, Real-Time Systems
-  </p>
+  <h2 class="fade-in">Career Interests</h2>
+  <p class="fade-in">Automotive Embedded Systems, Firmware Development, Device Drivers, Industrial IoT, Real-Time Systems</p>
 
   <hr />
 
-  <p>
-    Open to entry-level Embedded Systems and Firmware Engineer roles.
-  </p>
+  <p class="fade-in">Open to entry-level Embedded Systems and Firmware Engineer roles.</p>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll(".fade-in");
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      });
+      elements.forEach(el => observer.observe(el));
+    });
+  </script>
 
 </body>
 </html>
+
