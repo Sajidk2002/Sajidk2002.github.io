@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Muhammad Sajid K | Embedded Systems Engineer</title>
 <style>
   body {
@@ -12,11 +12,11 @@
     line-height: 1.6;
     color: #111;
   }
-  h1, h2, h3 { color: #000; }
-  h1 { margin-bottom: 5px; }
+  h1, h2, h3 { color: #000; margin: 0; }
+  h1 { margin-bottom: 10px; }
   .sub { color: #444; margin-bottom: 20px; }
   hr { border: none; border-top: 1px solid #ccc; margin: 25px 0; }
-  ul { margin-top: 5px; }
+  ul { margin-top: 5px; padding-left: 20px; }
   a { color: #0056b3; text-decoration: none; }
   a:hover { text-decoration: underline; color: #003366; }
 
@@ -45,14 +45,7 @@
   }
 
   /* Project cards */
-  .project { 
-    background-color: #f5f5f5; 
-    border-left: 5px solid #0056b3; 
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
-  }
+  .project { background-color: #f5f5f5; border-left: 5px solid #0056b3; padding: 20px; margin-bottom: 20px; border-radius: 5px; transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; }
   .project:hover { background-color: #e0ebff; transform: scale(1.02); box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
 
   /* Two column layout */
@@ -60,18 +53,10 @@
   .column { flex: 1; min-width: 300px; }
 
   /* Section header accent */
-  h2.section-header { border-left: 5px solid #0056b3; padding-left: 10px; background: #f0f8ff; border-radius: 3px; padding: 5px 10px; }
+  h2.section-header { border-left: 5px solid #0056b3; padding-left: 10px; background: #f0f8ff; border-radius: 3px; padding: 5px 10px; margin-top: 30px; }
 
   /* Download resume button */
-  .resume-btn {
-    background: #0056b3;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 10px;
-    display: inline-block;
-  }
+  .resume-btn { background: #0056b3; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; margin-top: 10px; display: inline-block; }
   .resume-btn:hover { background: #003366; }
 </style>
 </head>
@@ -81,9 +66,7 @@
 <div class="sub fade-in">Embedded Systems Engineer | ARM Cortex-M | FreeRTOS | CAN</div>
 
 <p class="fade-in">
-Embedded Systems Engineer trained at Vector India with hands-on experience in ARM Cortex-M firmware development,
-Embedded C/C++, and real-time systems. Strong focus on low-level firmware, device drivers, and automotive
-communication protocols for reliable embedded applications.
+Embedded Systems Engineer trained at Vector India with hands-on experience in ARM Cortex-M firmware development, Embedded C/C++, and real-time systems. Strong focus on low-level firmware, device drivers, and automotive communication protocols for reliable embedded applications.
 </p>
 
 <p class="fade-in">
@@ -110,7 +93,6 @@ communication protocols for reliable embedded applications.
 <hr />
 
 <h2 class="fade-in section-header">Projects</h2>
-
 <div class="columns">
   <div class="column">
     <div class="project fade-in">
@@ -150,15 +132,13 @@ communication protocols for reliable embedded applications.
 </div>
 
 <hr />
-
 <h2 class="fade-in section-header">Career Interests</h2>
 <p class="fade-in">Automotive Embedded Systems, Firmware Development, Device Drivers, Industrial IoT, Real-Time Systems</p>
-
 <hr />
 <p class="fade-in">Open to entry-level Embedded Systems and Firmware Engineer roles.</p>
 
 <script>
-// Fade-in animation
+// Fade-in animation on scroll
 document.addEventListener("DOMContentLoaded", () => {
   const elements = document.querySelectorAll(".fade-in");
   const observer = new IntersectionObserver(entries => {
@@ -185,5 +165,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 </html>
+
 
 
