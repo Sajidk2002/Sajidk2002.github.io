@@ -1,141 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muhammad Sajid K | Embedded Systems Engineer</title>
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 40px auto;
-      max-width: 900px;
-      line-height: 1.6;
-      color: #111;
-    }
-    h1, h2, h3 {
-      color: #000;
-    }
-    h1 {
-      margin-bottom: 5px;
-    }
-    .sub {
-      color: #444;
-      margin-bottom: 20px;
-    }
-    hr {
-      border: none;
-      border-top: 1px solid #ccc;
-      margin: 25px 0;
-    }
-    ul {
-      margin-top: 5px;
-    }
-    a {
-      color: #0056b3;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-      color: #003366;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Muhammad Sajid K | Embedded Systems Engineer</title>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px auto;
+    max-width: 900px;
+    line-height: 1.6;
+    color: #111;
+  }
+  h1, h2, h3 { color: #000; }
+  h1 { margin-bottom: 5px; }
+  .sub { color: #444; margin-bottom: 20px; }
 
-    /* Fade-in animation */
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    }
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  hr { border: none; border-top: 1px solid #ccc; margin: 25px 0; }
+  ul { margin-top: 5px; }
+  a { color: #0056b3; text-decoration: none; }
+  a:hover { text-decoration: underline; color: #003366; }
 
-    /* Skill bars */
-    .skill-bar { background: #eee; border-radius: 5px; margin: 5px 0; height: 20px; }
-    .skill-fill { background: #0056b3; height: 20px; border-radius: 5px; color: white; padding-left: 5px; line-height: 20px; transition: width 1s; }
-  </style>
+  /* Fade-in animation */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Skill bars container */
+  .skill-bar { background: #eee; border-radius: 5px; margin: 10px 0; height: 25px; overflow: hidden; }
+  .skill-fill {
+    background: #0056b3;
+    height: 25px;
+    border-radius: 5px;
+    width: 0;
+    color: white;
+    padding-left: 10px;
+    line-height: 25px;
+    transition: width 2s ease;
+  }
+</style>
 </head>
 <body>
 
-  <h1 class="fade-in">Muhammad Sajid K</h1>
-  <div class="sub fade-in">Embedded Systems Engineer | ARM Cortex-M | FreeRTOS | CAN</div>
+<h1 class="fade-in">Muhammad Sajid K</h1>
+<div class="sub fade-in">Embedded Systems Engineer | ARM Cortex-M | FreeRTOS | CAN</div>
 
-  <p class="fade-in">
-    Embedded Systems Engineer trained at Vector India with hands-on experience in ARM Cortex-M firmware development,
-    Embedded C/C++, and real-time systems. Strong focus on low-level firmware, device drivers, and automotive
-    communication protocols for reliable embedded applications.
-  </p>
+<p class="fade-in">
+Embedded Systems Engineer trained at Vector India with hands-on experience in ARM Cortex-M firmware development,
+Embedded C/C++, and real-time systems. Strong focus on low-level firmware, device drivers, and automotive
+communication protocols for reliable embedded applications.
+</p>
 
-  <p class="fade-in">
-    <strong>Email:</strong> muhammadsajidk183@gmail.com<br />
-    <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/muhammadsajid-embedded">linkedin.com/in/muhammadsajid-embedded</a><br />
-    <strong>GitHub:</strong> <a href="https://github.com/Sajidk2002">github.com/Sajidk2002</a><br />
-    <strong>Resume:</strong> <a href="https://drive.google.com/file/d/1xTZuYcb7GfTMIEnW1S5KMdhhWHHH7guU/view">View PDF</a>
-  </p>
+<p class="fade-in">
+<strong>Email:</strong> muhammadsajidk183@gmail.com<br />
+<strong>LinkedIn:</strong> <a href="https://linkedin.com/in/muhammadsajid-embedded">linkedin.com/in/muhammadsajid-embedded</a><br />
+<strong>GitHub:</strong> <a href="https://github.com/Sajidk2002">github.com/Sajidk2002</a><br />
+<strong>Resume:</strong> <a href="https://drive.google.com/file/d/1xTZuYcb7GfTMIEnW1S5KMdhhWHHH7guU/view">View PDF</a>
+</p>
 
-  <hr />
+<hr />
 
-  <h2 class="fade-in">Technical Skills</h2>
-  <div class="fade-in">
-    <div class="skill-bar"><div class="skill-fill" style="width:90%">Embedded C</div></div>
-    <div class="skill-bar"><div class="skill-fill" style="width:85%">C++</div></div>
-    <div class="skill-bar"><div class="skill-fill" style="width:80%">FreeRTOS</div></div>
-    <div class="skill-bar"><div class="skill-fill" style="width:85%">CAN/UART/SPI/I2C</div></div>
-  </div>
+<h2 class="fade-in">Technical Skills</h2>
+<div class="fade-in">
+  <div class="skill-bar"><div class="skill-fill" data-width="90%">Embedded C</div></div>
+  <div class="skill-bar"><div class="skill-fill" data-width="85%">C++</div></div>
+  <div class="skill-bar"><div class="skill-fill" data-width="80%">FreeRTOS</div></div>
+  <div class="skill-bar"><div class="skill-fill" data-width="85%">CAN / UART / SPI / I2C</div></div>
+</div>
 
-  <hr />
+<hr />
 
-  <h2 class="fade-in">Projects</h2>
+<h2 class="fade-in">Projects</h2>
 
-  <h3 class="fade-in">Reverse Parking System (Automotive Embedded)</h3>
-  <ul class="fade-in">
-    <li>Developed CAN-based inter-ECU communication on ARM Cortex-M</li>
-    <li>Implemented interrupt-driven firmware with sub-100 ms response time</li>
-    <li>Focused on reliability for automotive embedded applications</li>
-  </ul>
-  <p class="fade-in"><strong>Technologies:</strong> Embedded C, CAN, FreeRTOS, STM32</p>
-  <p class="fade-in"><a class="project-link" href="https://github.com/Sajidk2002/reverse-parking-system">View Project Repository</a></p>
+<h3 class="fade-in">Reverse Parking System (Automotive Embedded)</h3>
+<ul class="fade-in">
+  <li>Developed CAN-based inter-ECU communication on ARM Cortex-M</li>
+  <li>Implemented interrupt-driven firmware with sub-100 ms response time</li>
+  <li>Focused on reliability for automotive embedded applications</li>
+</ul>
+<p class="fade-in"><strong>Technologies:</strong> Embedded C, CAN, FreeRTOS, STM32</p>
+<p class="fade-in"><a class="project-link" href="https://github.com/Sajidk2002/reverse-parking-system">View Project Repository</a></p>
 
-  <h3 class="fade-in">Automated Waste Collection Robot</h3>
-  <ul class="fade-in">
-    <li>Integrated OpenCV-based image recognition with embedded control</li>
-    <li>Implemented PWM motor control and sensor-based navigation</li>
-    <li>Achieved autonomous obstacle avoidance</li>
-  </ul>
-  <p class="fade-in"><strong>Technologies:</strong> ARM Cortex-M, Embedded C++, Python, OpenCV</p>
-  <p class="fade-in"><a class="project-link" href="https://github.com/Sajidk2002/automated-waste-collection-robot">View Project Repository</a></p>
+<h3 class="fade-in">Automated Waste Collection Robot</h3>
+<ul class="fade-in">
+  <li>Integrated OpenCV-based image recognition with embedded control</li>
+  <li>Implemented PWM motor control and sensor-based navigation</li>
+  <li>Achieved autonomous obstacle avoidance</li>
+</ul>
+<p class="fade-in"><strong>Technologies:</strong> ARM Cortex-M, Embedded C++, Python, OpenCV</p>
+<p class="fade-in"><a class="project-link" href="https://github.com/Sajidk2002/automated-waste-collection-robot">View Project Repository</a></p>
 
-  <h3 class="fade-in">Student Record Management System</h3>
-  <ul class="fade-in">
-    <li>Built a console-based database using C and linked lists</li>
-    <li>Implemented CRUD operations and sorting</li>
-  </ul>
-  <p class="fade-in"><strong>Technologies:</strong> C, Data Structures</p>
-  <p class="fade-in"><a class="project-link" href="https://github.com/Sajidk2002/student-record-management">View Project Repository</a></p>
+<h3 class="fade-in">Student Record Management System</h3>
+<ul class="fade-in">
+  <li>Built a console-based database using C and linked lists</li>
+  <li>Implemented CRUD operations and sorting</li>
+</ul>
+<p class="fade-in"><strong>Technologies:</strong> C, Data Structures</p>
+<p class="fade-in"><a class="project-link" href="https://github.com/Sajidk2002/student-record-management">View Project Repository</a></p>
 
-  <hr />
+<hr />
 
-  <h2 class="fade-in">Career Interests</h2>
-  <p class="fade-in">Automotive Embedded Systems, Firmware Development, Device Drivers, Industrial IoT, Real-Time Systems</p>
+<h2 class="fade-in">Career Interests</h2>
+<p class="fade-in">Automotive Embedded Systems, Firmware Development, Device Drivers, Industrial IoT, Real-Time Systems</p>
 
-  <hr />
+<hr />
 
-  <p class="fade-in">Open to entry-level Embedded Systems and Firmware Engineer roles.</p>
+<p class="fade-in">Open to entry-level Embedded Systems and Firmware Engineer roles.</p>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const elements = document.querySelectorAll(".fade-in");
-      const observer = new IntersectionObserver(entries => {
+<script>
+  // Fade-in on scroll
+  document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".fade-in");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) entry.target.classList.add("visible");
+      });
+    }, {threshold: 0.1});
+    elements.forEach(el => observer.observe(el));
+
+    // Animate skill bars when they appear
+    const skillBars = document.querySelectorAll(".skill-fill");
+    skillBars.forEach(bar => {
+      const observerSkill = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           if(entry.isIntersecting) {
-            entry.target.classList.add("visible");
+            bar.style.width = bar.getAttribute("data-width");
           }
         });
-      });
-      elements.forEach(el => observer.observe(el));
+      }, {threshold: 0.5});
+      observerSkill.observe(bar);
     });
-  </script>
+  });
+</script>
 
 </body>
 </html>
-
